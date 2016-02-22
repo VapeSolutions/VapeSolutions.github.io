@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>仙盒---Celestial</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div id="dowebok">
+	<div class="section banner active">
+		
+	</div>
+
+	
+	<div class="section screen">
+		<div class="center-wrap">
+			<div class="desc screen-desc">
+				<h1>Vape Solutions 仙盒</h1>
+				<p>VS团里致力于制作国产精品.经过3个月的精雕细琢,六芒星仙盒经过36次版本迭代。终于于元宵佳节开启预售。</p>
+				<ul class="parameters-list">
+					<li><h2>48</h2><span>铷铁硼磁铁</span></li>
+					<li><h2>0.015mm</h2><span>CNC雕琢</span></li>
+					<li><h2>100%</h2><span>自主研发芯片</span></li>
+					<li><h2>骨架</h2><span>一体镂空成型</span></li
+                    <li><h2>零售价699</h2><span><a href="http://xianhe-celestia.flzhan.com/index.html?rd=0.020136228296905756">点此进入预售界面</a></span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="screen-img">
+			<img alt="screen" src="images/screen.png">
+		</div>
+	</div>
+
+	<div class="section cpu">
+		<div class="center-wrap">
+			<div class="desc cpu-desc">
+				<h1>独家六面可替换设计</h1>
+				<p>是否已经厌倦了手中盒子一成不变的颜色?是否对自己的审美疲劳和喜新厌旧反感不已。六芒星仙盒借力于48颗高强度铷铁硼，和高精度的CNC雕琢实现了六面可替换设计,从此您手中的盒子的颜色不再单一。从此我们可以大声的告诉世界，仙盒！！！没有颜色！！！</p>
+			</div>
+			<div class="cpu-img">
+				<img alt="cpu" src="images/playgame.png?v=2">
+			</div>
+		</div>
+	</div>
+
+	
+
+
+	<div class="section flyme">
+		<div class="center-wrap">
+			<div class="desc flyme-desc">
+				<h1>多种工业跨界材料</h1>
+				<p>贝壳树脂，稳定化木这些材料是否是大家所期待的呢。为了解决材料强度问题，VS采用一整块316L钢背板和上述特殊材料正面贴合。</br>使在提高贴片强度的同时，又适当的增加了盒子的重量。限量版毕竟是限量版..</p>
+			</div>
+		</div>
+		<div class="flyme-img">
+			<img class="flyme-pic2" src="images/p2.png">
+		</div>
+	</div>
+
+	<div class="section footer fp-auto-height">
+		
+		
+		<div class="copyright center-wrap">
+			<p>©2016 Vape.Solutions</p>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script>
+$(function(){
+	var $mlNav = $('.ml-nav');
+	$('#dowebok').fullpage({
+		verticalCentered: !1,
+		navigation: !0,
+		onLeave: function(index, nextIndex, direction){
+			if(index == 2 && direction == 'up'){
+				$mlNav.animate({
+					top: 80
+				}, 680);
+			} else if(index == 1 && direction == 'down') {
+				$mlNav.animate({
+					top: 0
+				}, 400);
+			} else if(index == 3 && direction == 'up') {
+				$mlNav.animate({
+					top: 0
+				}, 500);
+			} else {
+				$mlNav.animate({
+					top: -66
+				}, 400);
+			}
+		}
+	});
+});
+</script>
+
+</body>
+</html>
